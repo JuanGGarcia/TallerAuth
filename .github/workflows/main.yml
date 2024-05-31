@@ -1,0 +1,22 @@
+name: Primer pipline
+
+on: 
+  pull_request:
+    branches: ["main"]
+
+  push: 
+    branches: ["main"]
+
+jobs:
+    build:
+      runs-on: ubunto-latest
+
+      steps: 
+        - name: Revision repositorio
+          run: echo esta ejecutando el entorno
+
+        - name: analisis repositorio
+          run: se esta analizando el repositorio
+
+          
+ls -la
